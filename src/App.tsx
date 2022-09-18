@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Oscar from "./components/Oscar";
 import { EventProps } from "./components/EventProps";
 import Input from './components/Input';
+import StyleContainer from './components/StyleContainer';
 
 
 function App() {
@@ -102,6 +103,9 @@ function App() {
       <hr />
 
       <Input />
+      <hr />
+
+      <StyleContainer style={{color:'red'}}/>
     </div>
   );
 }

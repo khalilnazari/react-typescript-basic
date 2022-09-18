@@ -12,6 +12,7 @@ import Input from './components/Input';
 import StyleContainer from './components/StyleContainer';
 import LocalState from './components/LocalState'
 import LocalStateFutureValue from './components/LocalStateFutureValue';
+import UseReducerType from './components/UseReducerType';
 
 function App() {
 
@@ -112,6 +113,9 @@ function App() {
       <hr />
 
       <LocalStateFutureValue />
+      <hr /> 
+
+      <UseReducerType />
     </div>
   );
 }

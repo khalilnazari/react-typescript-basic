@@ -11,6 +11,7 @@ import { EventProps } from "./components/EventProps";
 import Input from './components/Input';
 import StyleContainer from './components/StyleContainer';
 import LocalState from './components/LocalState'
+import LocalStateFutureValue from './components/LocalStateFutureValue';
 
 function App() {
 
@@ -108,6 +109,9 @@ function App() {
       <hr />
 
       <LocalState />
+      <hr />
+
+      <LocalStateFutureValue />
     </div>
   );
 }

@@ -8,6 +8,7 @@ import Status from "./components/Status";
 import Header from "./components/Header";
 import Oscar from "./components/Oscar";
 import { EventProps } from "./components/EventProps";
+import Input from './components/Input';
 
 
 function App() {
@@ -98,6 +99,9 @@ function App() {
         noEventClick={noEventClick}
         handleEventClick={(event, id) => handleEventClick(event, id)}
       />
+      <hr />
+
+      <Input />
     </div>
   );
 }

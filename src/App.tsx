@@ -10,7 +10,7 @@ import Oscar from "./components/Oscar";
 import { EventProps } from "./components/EventProps";
 import Input from './components/Input';
 import StyleContainer from './components/StyleContainer';
-
+import LocalState from './components/LocalState'
 
 function App() {
 
@@ -56,7 +56,6 @@ function App() {
     console.log(event);
     console.log(id);
   };
-
 
   // jsx
   return (
@@ -106,6 +105,9 @@ function App() {
       <hr />
 
       <StyleContainer style={{color:'red'}}/>
+      <hr />
+
+      <LocalState />
     </div>
   );
 }

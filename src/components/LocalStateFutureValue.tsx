@@ -1,7 +1,7 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 
 // Type for user details
-type userProps ={
+type userProps = {
     name: string, 
     email: string
 }
@@ -13,6 +13,19 @@ const LocalStateFutureValue = () => {
      * Below implementation set the type of user to be null(initial value) or Object/string (future value)
      */
     const  [user, setUser] = useState<userProps | null>(null)
+    
+    /**
+     * Type assertion
+     * When the state is not null and will get value as soon as DOM is mounted. 
+     */
+    const [admin, setAdmin] = useState<userProps>({} as userProps)
+
+    useEffect(() => {
+        setAdmin({
+            name: 'Jamil', 
+            email: 'jamil@gmail.com'
+        })
+    }, [])
     
     const handleLogin = () => {
         setUser({
@@ -37,6 +50,10 @@ const LocalStateFutureValue = () => {
                     <p>{user.email}</p>
                 </div>
             )}
+
+            <h2>Admin</h2>
+            <p>{admin.name}</p>
+            <p>{admin.email}</p>
         </div>
     )
 }

@@ -13,6 +13,7 @@ import StyleContainer from './components/StyleContainer';
 import LocalState from './components/LocalState'
 import LocalStateFutureValue from './components/LocalStateFutureValue';
 import UseReducerType from './components/UseReducerType';
+import UseReducerStrictType from './components/UseReducerStrictType';
 
 function App() {
 
@@ -116,6 +117,9 @@ function App() {
       <hr /> 
 
       <UseReducerType />
+      <br />
+
+      <UseReducerStrictType />
     </div>
   );
 }
